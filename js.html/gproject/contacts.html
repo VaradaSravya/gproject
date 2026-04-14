@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <style>
+
+        *{
+            box-sizing: border-box;
+            padding:0px;
+            margin:0px;
+        }
+       :root {
+            --bg-color: #f0f4f4;
+            --card-bg: #f8f1e5;
+            --text-dark: #2d4a4a;
+            --accent-orange: #e8a87c;
+            --btn-bg: #4a6767;
+        }
+
+       
+        nav {
+            margin-bottom: -20px;
+            background-color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position:fixed;
+            min-width: 100vw;
+            margin:0;
+        
+        }
+
+        .logo {
+            margin-left: 3rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-green);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+           justify-content: space-around;
+            list-style: none;
+            display: flex;
+          
+        }
+       
+        
+        .nav-links a {
+            margin-right:4rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-green);
+        }
+
+      
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Outfit', sans-serif;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    margin: 0;
+    color: var(--text-dark);
+}
+
+.container {
+    padding:4rem;
+    margin-left: 13rem;
+    width: 90%;
+    max-width:900px;
+}
+
+h1 {
+    
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    margin-left:10rem;
+}
+
+.contact-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--text-dark);
+    border-radius: 40px;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-orange);
+    border: 2px solid var(--text-dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.contact-form {
+    flex: 1.2;
+    min-width: 280px;
+    text-align: left;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 1rem;
+    border: 2px solid var(--text-dark);
+    border-radius: 15px;
+    background: white;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--btn-bg);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #3a5252;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">🌿 FRESH FOOD</div>
+        <ul class="nav-links">
+           <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="categories.html">Category</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonal.html">Testimonal</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+
+        </ul>
+      
+    </nav>
+    
+
+    <div class="container">
+        <h1>Contact Our Team</h1>
+        
+        <div class="contact-card">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="icon phone-icon">📞</div>
+                    <p><strong>Phone:</strong> +91 9876543210</p>
+                </div>
+                <div class="info-item">
+                    <div class="icon email-icon">✉️</div>
+                    <p><strong>Email:</strong> freshfood@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <div class="icon address-icon">📍</div>
+                    <p><strong>Address:</strong>Marathalli , Bangalore</p>
+                </div>
+                <div class="info-item">
+                    <div class="icon hours-icon">🕒</div>
+                    <p><strong>Hours:</strong> Mon-Fri, 9am-11pm</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+
+</body>
+</html>

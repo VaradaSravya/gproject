@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Original heading</h1>
+    <p id="para">This is a paragraph</p>
+    <script>
+        const heading=document.getElementById("title")
+        const paragraph=document.getElementById("para")
+        heading.textContent="Updated heading"
+        paragraph.textContent="Updated paragraph"
+        paragraph.innerHTML="Updated <i>paragraph<i>"
+
+        heading.style.color="blue"
+        heading.style.fontSize="20px"
+        
+
+    </script>
+
+</body>
+</html>

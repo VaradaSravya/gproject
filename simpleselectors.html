@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id{
+            background-color: blue;
+            color:azure;
+        }
+        .class{
+            background-color: aqua;
+            color: brown;
+        }
+        h2,h3{
+            background-color:yellow;
+            color: azure;
+        }
+        h1{
+            background-color: blanchedalmond;
+            color: black;
+        }
+        *{
+            background-color: aquamarine;
+        }
+        #content,.content{
+            background-color: aliceblue;
+            color: yellow;
+        }
+        #content,#cont{
+            background-color: palevioletred;
+            color: blue;
+        }
+        #container p{
+            background-color: aqua;
+        }
+        #container >p{
+            background-color: blue;
+        }
+        #container ~ p{
+            background-color: yellow;
+
+        }
+        #container +p{
+            background-color: antiquewhite;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1 id="id">This is id selector</h1>
+    <h2 class="class">This is class selector</h2>
+    <h3>This is grouping selector</h3>
+    <h2>this is grouping selector</h2>
+    <h1>This is tag name selector</h1>
+    <h2>This is universal selector</h2>
+    <h2 id="content">This is combo of id and cls</h2>
+    <h2 class="content">Ths is combo of idd and clss</h2>
+    <h2 id="content">This is combo of id and cls</h2>
+    <h2 id="cont">Ths is combo of idd and clss</h2> 
+    <div id="container">
+            <p>This is #1</p>
+            <p>This is #2</p>
+            <div>
+                <p>This is #3</p>
+            </div>
+    </div>
+    <p>This is #4</p>
+    <p>this is #5</p>
+
+</body>
+</html>
